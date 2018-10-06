@@ -1,4 +1,5 @@
 alias ll="ls -l"
+alias g="git"
 
 # Adapted from http://gist.github.com/31934
 # http://henrik.nyh.se/2008/12/git-dirty-prompt
