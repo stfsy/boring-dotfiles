@@ -47,13 +47,13 @@ function git_branch_and_user {
 
 function prompt_func() {
     previous_return_value=$?;
-    prompt="${COLOR_NONE}[${COLOR_NONE}\w${GREEN}${COLOR_NONE}$(git_branch_and_user)${COLOR_NONE}] "
+    prompt="\n${COLOR_NONE}[${COLOR_NONE}\w${GREEN}${COLOR_NONE}$(git_branch_and_user)${COLOR_NONE}] "
 
     if test $previous_return_value -eq 0
     then
         PS1="${prompt}"
     else
-        PS1="${prompt}${RED}${COLOR_NONE}"
+        PS1="${prompt}${COLOR_NONE}"
     fi
 }
 
