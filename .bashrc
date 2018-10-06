@@ -1,5 +1,6 @@
 alias ls='ls --color=auto'
 alias ll="ls -l"
+alias m="mvn"
 alias g="git"
 
 # Adapted from http://gist.github.com/31934
