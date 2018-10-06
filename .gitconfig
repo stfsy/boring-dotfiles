@@ -11,7 +11,8 @@
     d = diff
     ds = diff --stat
     dc = diff --cached
-
+    dh = diff HEAD --
+    
     l = log
     lo = log --oneline
 
