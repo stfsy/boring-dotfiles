@@ -1,0 +1,31 @@
+[alias]
+    a = add
+    b = branch
+
+    c = commit --verbose
+    cm = commit -m
+
+    co = checkout
+    cob = checkout -b
+
+    d = diff
+    ds = diff --stat
+    dc = diff --cached
+
+    l = log
+    lo = log --oneline
+
+    s = status
+    sb = status -sb
+
+    r = reset HEAD --
+
+[user]
+    email = 
+    name = 
+
+[url "https://"]
+    insteadOf = git://
+
+[core]
+    autocrlf = false
