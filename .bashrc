@@ -5,6 +5,10 @@ alias j='java'
 alias ls='ls --color=auto'
 alias ll="ls -l"
 alias m="mvn"
+alias mci="mvn clean install"
+alias mcis="mvn clean install spring-boot:run"
+alias mct="mvn clean test"
+alias mcp="mvn clean package"
 alias n="npm"
 
 ## cloudfoundry cli alias
