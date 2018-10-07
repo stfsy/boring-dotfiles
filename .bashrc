@@ -5,6 +5,7 @@ alias j='java'
 alias ls='ls --color=auto'
 alias ll="ls -l"
 alias m="mvn"
+alias n="npm"
 
 ## cloudfoundry cli alias
 
