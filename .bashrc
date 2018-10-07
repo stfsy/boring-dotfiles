@@ -1,7 +1,12 @@
+alias d='docker'
+alias dm='docker-machine'
 alias ls='ls --color=auto'
 alias ll="ls -l"
 alias m="mvn"
 alias g="git"
+
+## cloudfoundry cli alias
+
 
 # Adapted from http://gist.github.com/31934
 # http://henrik.nyh.se/2008/12/git-dirty-prompt
