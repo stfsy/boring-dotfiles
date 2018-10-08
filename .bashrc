@@ -6,7 +6,7 @@ alias ls='ls --color=auto'
 alias ll="ls -l"
 alias m="mvn"
 alias mc="m clean"
-alias mci="mvn clean install"
+alias mci="mc install"
 alias mcist="mci -Dmaven.test.skip=true"
 alias mcisb="mci spring-boot:run"
 alias mct="mc test"
