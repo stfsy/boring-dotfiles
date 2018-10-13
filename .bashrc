@@ -3,8 +3,10 @@ alias dc='docker-compose'
 alias dm='docker-machine'
 alias g="git"
 alias j='java'
+# ls
 alias ls='ls --color=auto'
 alias ll="ls -l"
+# maven
 alias m="mvn"
 alias mc="m clean"
 alias mci="mc install"
@@ -12,7 +14,11 @@ alias mcist="mci -Dmaven.test.skip=true"
 alias mcisb="mci spring-boot:run"
 alias mct="mc test"
 alias mcp="mc package"
+# npm
 alias n="npm"
+alias ns="npm run start"
+alias nt="npm run test"
+alias np="npm run publish"
 
 ## cloudfoundry cli alias
 
