@@ -14,6 +14,7 @@ alias mcist="mci -Dmaven.test.skip=true"
 alias mcisb="mci spring-boot:run"
 alias mct="mc test"
 alias mcp="mc package"
+alias mvs="m versions:set"
 # npm
 alias n="npm"
 alias ns="npm run start"
