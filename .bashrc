@@ -1,7 +1,23 @@
 alias d='docker'
 alias dc='docker-compose'
 alias dm='docker-machine'
+# git
 alias g="git"
+alias ga="g add"
+alias gb="g branch"
+alias gc="g commit --verbose"
+alias gcm="g commit -m"
+alias gco="g checkout"
+alias gcob="gco -b"
+alias gd="g diff"
+alias gdh="gd HEAD --"
+alias gl="g log"
+alias glo="gl --oneline"
+alias gs="g status"
+alias gsb="gs -sb"
+alias gr="g reset"
+alias grh="gr HEAD --"
+
 alias j='java'
 # ls
 alias ls='ls --color=auto'
