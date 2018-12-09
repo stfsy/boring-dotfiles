@@ -1,5 +1,11 @@
+# docker
 alias d='docker'
+# docker images
+alias d-swagger-editor='docker pull swaggerapi/swagger-editor && docker run -p 80:8080'
+alias dse='d-swagger-editor'
+# docker compose
 alias dc='docker-compose'
+# docker machine
 alias dm='docker-machine'
 # git
 alias g="git"
