@@ -17,7 +17,7 @@ alias gs="g status"
 alias gsb="gs -sb"
 alias gr="g reset"
 alias grh="gr HEAD --"
-
+# java
 alias j='java'
 # ls
 alias ls='ls --color=auto'
@@ -28,7 +28,7 @@ alias mc="m clean"
 alias mci="mc install"
 alias mcist="mci -Dmaven.test.skip=true"
 alias mcisb="mci spring-boot:run"
-alias mct="mc test -DfailIfNoTests=false"
+alias mct="mc test -DfailIfNoTests=false -Dtest=*"
 alias mcp="mc package"
 alias mvs="m versions:set"
 # npm
@@ -62,21 +62,21 @@ function git_branch_and_user {
   diverge_pattern="Your branch and (.*) have diverged"
 
   if [[ ! ${git_status}} =~ "working directory clean" ]]; then
-    state="⚡"
+    state="?"
   fi
   # add an else if or two here if you want to get more specific
   if [[ ${git_status} =~ ${remote_pattern} ]]; then
     if [[ ${BASH_REMATCH[1]} == "ahead" ]]; then
-      remote=" ${GREEN}↑"
+      remote=" ${GREEN}?"
     else
-      remote=" ${GREEN}↓"
+      remote=" ${GREEN}?"
     fi
   fi 
   if [[ ${git_status} =~ ${diverge_pattern} ]]; then
-    remote=" ${YELLOW}↕"
+    remote=" ${YELLOW}?"
   fi
   if [[ ${git_status} =~ ${branch_pattern} ]]; then
-    branch=" ⎇ ${BASH_REMATCH[1]}"
+    branch=" ? ${BASH_REMATCH[1]}"
     # echo "${branch}${ORANGE}${remote}${state}"
     echo ${RED}"${branch}${remote}"
   fi
