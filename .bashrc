@@ -59,6 +59,8 @@ alias np="npm run publish"
 
 # misc
 alias ..="cd .." 
+alias ...="cd ../.." 
+
 alias ~="cd ~"
 alias c="clear"
 alias r="reset"
