@@ -57,6 +57,12 @@ alias ns="npm run start"
 alias nt="npm run test"
 alias np="npm run publish"
 
+# misc
+alias ..="cd .." 
+alias ~="cd ~"
+alias c="clear"
+alias r="reset"
+
 # Adapted from http://gist.github.com/31934
 # http://henrik.nyh.se/2008/12/git-dirty-prompt
 # http://www.simplisticcomplexity.com/2008/03/13/show-your-git-branch-name-in-your-prompt/
