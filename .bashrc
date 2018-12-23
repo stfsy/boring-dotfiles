@@ -1,3 +1,9 @@
+# cloudfoundry
+alias cfa="cf apps"
+alias cfl="cf logs"
+alias cfi="cf login -a"
+alias cfp="cf push"
+alias cft="cf target"
 # docker
 alias d='docker'
 # docker images
@@ -50,9 +56,6 @@ alias n="npm"
 alias ns="npm run start"
 alias nt="npm run test"
 alias np="npm run publish"
-
-## cloudfoundry cli alias
-
 
 # Adapted from http://gist.github.com/31934
 # http://henrik.nyh.se/2008/12/git-dirty-prompt
