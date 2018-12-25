@@ -13,6 +13,9 @@ alias dse='d-swagger-editor'
 alias dc='docker-compose'
 # docker machine
 alias dm='docker-machine'
+alias dma='dm active'
+alias dmi='dm ip'
+alias dms='dm ssh'
 # git
 alias g="git"
 alias ga="g add"
