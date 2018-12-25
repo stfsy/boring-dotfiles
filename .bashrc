@@ -14,6 +14,7 @@ alias dc='docker-compose'
 # docker machine
 alias dm='docker-machine'
 alias dma='dm active'
+alias dme="dm env"
 alias dmi='dm ip'
 alias dms='dm ssh'
 # git
