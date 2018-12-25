@@ -68,6 +68,7 @@ alias ...="cd ../.."
 
 alias ~="cd ~"
 alias c="clear"
+alias e="eval"
 alias r="reset"
 
 # Adapted from http://gist.github.com/31934
