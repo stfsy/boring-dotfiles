@@ -8,6 +8,7 @@ alias cft="cf target"
 alias d='docker'
 alias de='d exec'
 alias deit='docker exec -it'
+alias di='docker inspect'
 alias dp='d ps'
 # docker images
 alias d-swagger-editor='docker pull swaggerapi/swagger-editor && docker run -p 80:8080'
