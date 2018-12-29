@@ -6,6 +6,8 @@ alias cfp="cf push"
 alias cft="cf target"
 # docker
 alias d='docker'
+alias dc='d container'
+alias dcl='dc ls'
 alias de='d exec'
 alias deit='docker exec -it'
 alias di='docker inspect'
@@ -19,7 +21,9 @@ alias dc='docker-compose'
 alias dm='docker-machine'
 alias dma='dm active'
 alias dme="dm env"
+alias dmes='dm env --swarm'
 alias dmi='dm ip'
+alias dml='dm ls'
 alias dms='dm ssh'
 # git
 alias g="git"
