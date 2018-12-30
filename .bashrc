@@ -1,7 +1,7 @@
 # cloudfoundry
 alias cfa="cf apps"
-alias cfl="cf logs"
-alias cfi="cf login -a"
+alias cflo="cf logs"
+alias cfli="cf login -a"
 alias cfp="cf push"
 alias cft="cf target"
 # docker
