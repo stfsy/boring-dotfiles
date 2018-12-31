@@ -18,6 +18,7 @@ alias d-swagger-editor='docker pull swaggerapi/swagger-editor && docker run -p 8
 alias dse='d-swagger-editor'
 # docker compose
 alias dc='docker-compose'
+alias dcf='docker-compose -f'
 # docker machine
 alias dm='docker-machine'
 alias dma='dm active'
