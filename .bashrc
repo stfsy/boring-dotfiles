@@ -11,6 +11,7 @@ alias dcl='dc ls'
 alias de='d exec'
 alias deit='d exec -it'
 alias dl='d logs'
+alias dlf='dl -f'
 alias di='d inspect'
 alias dp='d ps'
 # docker images
