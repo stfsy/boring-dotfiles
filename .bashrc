@@ -32,6 +32,7 @@ alias dml='dm ls'
 alias dms='dm ssh'
 # eval
 alias e="eval"
+alias 3='e'
 # git
 alias g="git"
 alias ga="g add"
