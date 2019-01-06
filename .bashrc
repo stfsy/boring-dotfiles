@@ -86,6 +86,8 @@ alias r="reset"
 
 # rm
 alias rmrf="rm -rf"
+# wget
+alias wget="wget -S -O - "
 
 # misc
 alias ..="cd .." 
