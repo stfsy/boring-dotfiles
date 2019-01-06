@@ -4,13 +4,13 @@
 
 module.exports = {
   config: {
-    opacity: 0.98,
+    opacity: 1,
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 13,
+    fontSize: 14,
 
     // font family with optional fallbacks
     fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
