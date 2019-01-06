@@ -83,7 +83,6 @@ alias np="npm run publish"
 alias psaux="ps auxf"
 # reset
 alias r="reset"
-
 # rm
 alias rmrf="rm -rf"
 # wget
