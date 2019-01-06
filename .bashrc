@@ -84,6 +84,9 @@ alias psaux="ps auxf"
 # reset
 alias r="reset"
 
+# rm
+alias rmrf="rm -rf"
+
 # misc
 alias ..="cd .." 
 alias ...="cd ../.." 
