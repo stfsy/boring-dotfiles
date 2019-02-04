@@ -80,6 +80,9 @@ alias n="npm"
 alias ns="npm run start"
 alias nt="npm run test"
 alias np="npm run publish"
+# powershell
+alias pkpj="powershell kill $(ps aux | grep java | awk '{print $4}')"
+alias pkpn="powershell kill $(ps aux | grep java | awk '{print $4}')"
 # ps
 alias psaux="ps auxf"
 # reset
