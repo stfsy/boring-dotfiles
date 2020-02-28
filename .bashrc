@@ -73,6 +73,8 @@ alias mcist="mci -Dmaven.test.skip=true"
 alias mct="mc test -DtrimStackTrace=false -DfailIfNoTests=false -Dtest=*"
 alias mcp="mc package"
 alias mvs="m versions:set"
+alias mdo="export MAVEN_OPTS='-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000'"
+alias mudo="unset MAVEN_OPTS"
 # mkdir
 alias mkdir="mkdir -pv"
 # npm
