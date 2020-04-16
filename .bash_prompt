@@ -25,18 +25,19 @@ function git_branch_and_user {
   # add an else if or two here if you want to get more specific
   if [[ ${git_status} =~ ${remote_pattern} ]]; then
     if [[ ${BASH_REMATCH[1]} == "ahead" ]]; then
-      remote=" ${GREEN}?"
-    else
-      remote=" ${GREEN}?"
+      remote=" ${GREEN}↑"
+    fi
+    if [[ ${BASH_REMATCH[1]} == "behind" ]]; then
+      remote=" ${GREEN}↓"
     fi
   fi 
   if [[ ${git_status} =~ ${diverge_pattern} ]]; then
-    remote=" ${YELLOW}?"
+    remote=" ${YELLOW}↑↓"
   fi
   if [[ ${git_status} =~ ${branch_pattern} ]]; then
-    branch=" ? ${BASH_REMATCH[1]}"
+    branch=" ⎇ ${BASH_REMATCH[1]}"
     # echo "${branch}${ORANGE}${remote}${state}"
-    echo ${RED}"${branch}${remote}"
+    echo -e ${RED}"${branch}${remote}"
   fi
 }
 
@@ -53,3 +54,4 @@ function prompt_func() {
 }
 
 PROMPT_COMMAND=prompt_func 
+LANG=C.UTF-8
