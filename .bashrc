@@ -36,6 +36,7 @@ alias 3='e'
 # git
 alias g="git"
 alias ga="g add"
+alias gap="ga -p"
 alias gb="g branch"
 alias gc="g commit --verbose"
 alias gcm="g commit -m"
