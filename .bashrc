@@ -62,6 +62,16 @@ alias gr="g reset"
 alias grh="gr HEAD --"
 # java
 alias j='java'
+# kubectl
+alias k='kubectl'
+alias kd='k describe'
+alias kdd='kd deployment'
+alias kdp='kd pod'
+alias kdp='kd service'
+alias kg='k get'
+alias kgds='kg deployments'
+alias kgps='kg pods'
+alias kgss='kg services'
 # ls
 alias ls='ls --color=auto'
 alias ll="ls -l"
