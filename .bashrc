@@ -100,9 +100,9 @@ alias mkdir="mkdir -pv"
 alias n="npm"
 alias ni='n install'
 alias nci='n ci'
-alias ns="npm run start"
-alias nt="npm run test"
-alias np="npm run publish"
+alias ns="n run start"
+alias nt="n run test"
+alias np="n run publish"
 # ps
 alias psaux="ps auxf"
 # reset
