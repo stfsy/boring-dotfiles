@@ -60,6 +60,11 @@ alias gs="g status"
 alias gsb="gs -sb"
 alias gr="g reset"
 alias grh="gr HEAD --"
+alias grh1='gr HEAD~1'
+alias grh2='gr HEAD~2'
+alias grh3='gr HEAD~3'
+alias grh4='gr HEAD~4'
+alias grh5='gr HEAD~5'
 # java
 alias j='java'
 alias jj='java -jar'
