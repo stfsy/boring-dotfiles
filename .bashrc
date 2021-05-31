@@ -62,6 +62,7 @@ alias gr="g reset"
 alias grh="gr HEAD --"
 # java
 alias j='java'
+alias jj='java -jar'
 # kubectl
 alias k='kubectl'
 alias kd='k describe'
