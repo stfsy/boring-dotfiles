@@ -92,6 +92,8 @@ alias mudo="unset MAVEN_OPTS"
 alias mkdir="mkdir -pv"
 # npm
 alias n="npm"
+alias ni='n install'
+alias nci='n ci'
 alias ns="npm run start"
 alias nt="npm run test"
 alias np="npm run publish"
