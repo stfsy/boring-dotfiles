@@ -17,7 +17,7 @@ alias dlf='dl -f'
 alias di='d inspect'
 alias dp='d ps'
 # docker images
-alias d-swagger-editor='docker pull swaggerapi/swagger-editor && docker run -p 80:8080'
+alias d-swagger-editor='docker pull swaggerapi/swagger-editor && docker run -p 80:8080 swaggerapi/swagger-editor'
 alias dse='d-swagger-editor'
 # docker compose
 alias dc='docker-compose'
