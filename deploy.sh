@@ -8,6 +8,7 @@ function install() {
     source ~/$1
 }
 
+deploy .bash_prompt
 deploy .bash_profile
 deploy .bashrc
 deploy .gitconfig
