@@ -83,6 +83,7 @@ alias kgss='kg services'
 # ls
 alias ls='ls --color=auto'
 alias ll="ls -l"
+alias lla="ll -a"
 # maven
 alias m="mvn"
 alias mc="m clean"
