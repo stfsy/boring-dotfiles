@@ -110,7 +110,7 @@ alias np="n run publish"
 alias psaux="ps auxf"
 # python
 alias p="python"
-alias pe='if [ -d ".env" ]; then source ./.env/Scripts/activate; else p -m venv .env && source ".env/Scripts/activate"; fi'
+alias pe='if [ -d ".env" ]; then source ./.env/Scripts/activate; else p -m venv .env && source ".env/Scripts/activate"; fi && which python'
 alias ph="p -m http.server"
 # reset
 alias r="reset"
