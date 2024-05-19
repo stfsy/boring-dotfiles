@@ -108,6 +108,10 @@ alias nt="n run test"
 alias np="n run publish"
 # ps
 alias psaux="ps auxf"
+# python
+alias p="python"
+alias pe='if [ -d ".env" ]; then source ./.env/Scripts/activate; else p -m venv .env && source ".env/Scripts/activate"; fi'
+alias ph="p -m http.server"
 # reset
 alias r="reset"
 # rm
@@ -119,5 +123,5 @@ alias wget="wget -S -O - "
 alias ..="cd .." 
 alias ...="cd ../.." 
 alias ~="cd ~"
-alias work="cd /c/workspace"
+alias work="cd /d/"
 alias w="work"
