@@ -59,6 +59,8 @@ alias gp="g push"
 alias gpo="gp origin"
 alias gpod="gpo dev"
 alias gs="g status"
+alias gst="g stash"
+alias gstp="g stash pop"
 alias gsb="gs -sb"
 alias gr="g reset"
 alias grh="gr HEAD --"
@@ -67,6 +69,10 @@ alias grh2='gr HEAD~2'
 alias grh3='gr HEAD~3'
 alias grh4='gr HEAD~4'
 alias grh5='gr HEAD~5'
+alias grbi='g stash && g rebase -i HEAD~5 && g stash pop'
+alias grbi5='g stash && g rebase -i HEAD~5 && g stash pop'
+alias grbi10='g stash && g rebase -i HEAD~10 && g stash pop'
+alias grbi20='g stash && g rebase -i HEAD~20 && g stash pop'
 # java
 alias j='java'
 alias jj='java -jar'
@@ -120,8 +126,8 @@ alias rmrf="rm -rf"
 alias wget="wget -S -O - "
 
 # misc
-alias ..="cd .." 
-alias ...="cd ../.." 
+alias ..="cd .."
+alias ...="cd ../.."
 alias ~="cd ~"
 alias work="cd /d/"
 alias w="work"
