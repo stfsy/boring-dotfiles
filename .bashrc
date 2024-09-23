@@ -7,6 +7,7 @@ alias cfli="cf login -a"
 alias cfp="cf push"
 alias cft="cf target"
 # docker
+alias docker='DOCKER_CONTENT_TRUST=1 docker'
 alias d='docker'
 alias dc='d container'
 alias dcl='dc ls'
