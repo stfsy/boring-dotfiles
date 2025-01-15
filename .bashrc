@@ -77,7 +77,7 @@ alias grbi10='gst && g rebase -i HEAD~10 && gstp'
 alias grbi20='gst && g rebase -i HEAD~20 && gstp'
 # java
 alias j='java'
-alias jj='java -jar'
+alias jj='j -jar'
 # kubectl
 alias k='kubectl'
 alias kd='k describe'
