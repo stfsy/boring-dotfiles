@@ -1,3 +1,10 @@
+# aws
+alias a="aws"
+alias awhoami="aws sts get-caller-identity"
+alias asp="touch ~/.aws-switch && aws-switch-profiles ~/.aws-switch && export AWS_PROFILE=$(cat ~/.aws-switch) && awhoami"
+# aws sam cli
+alias sam='if command -v sam.cmd >/dev/null 2>&1; then sam.cmd; else sam; fi'
+alias asam="sam"
 # clear
 alias c="clear"
 # docker
