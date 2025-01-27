@@ -127,6 +127,37 @@ alias ph="p -m http.server"
 alias r="reset"
 # rm
 alias rmrf="rm -rf"
+# terraform
+alias t='terraform'
+alias tf='t'
+alias ta='t apply'
+alias tay='ta -auto-approve'
+alias tc='t console'
+alias td='t destroy'
+alias tdy='td -auto-approve'
+alias tf='t fmt'
+alias tg='t graph'
+alias tim='t import'
+alias tin='t init'
+alias tinu='tin -upgrade'
+alias to='t output'
+alias tp='t plan'
+alias tpde='tp --destroy'
+alias tpr='t providers'
+alias tr='t refresh'
+alias tsh='t show'
+alias tt='t taint'
+alias tut='t untaint'
+alias tv='t validate'
+alias ts='t state'
+alias tfu='t force-unlock'
+alias tssw='ts show'
+alias tsls='ts list'
+alias tsmv='ts mv'
+alias tspl='ts pull'
+alias tsph='ts push'
+alias tsrm='ts rm'
+
 # wget
 alias wget="wget -S -O - "
 
