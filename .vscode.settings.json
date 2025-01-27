@@ -104,5 +104,26 @@
         "!Join scalar",
         "!Join mapping",
         "!Join sequence"
-    ]
+    ],
+    "chat.commandCenter.enabled": true,
+    "geminicodeassist.enable": true,
+    "terraform.experimentalFeatures.prefillRequiredFields": true,
+    "terraform.codelens.referenceCount": true,
+    "terraform.languageServer.enable": true,
+    "terraform.validation.enableEnhancedValidation": false,
+    "editor.suggest.preview": true,
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.formatAll.terraform": "explicit"
+        },
+    },
+    "[terraform-vars]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.formatAll.terraform": "explicit"
+        },
+    }
 }
