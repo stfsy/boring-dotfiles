@@ -41,9 +41,21 @@ function git_branch_and_user {
   fi
 }
 
+function python_env() {
+  if [[ "$VIRTUAL_ENV" ]] ; then
+    current_dir=$(pwd)
+    env_path="$VIRTUAL_ENV"
+    python_path=$(which python)
+
+    if [[ $env_path/Scripts/python == "$python_path" ]]; then
+      echo -e " 🐍"
+    fi
+  fi
+}
+
 function prompt_func() {
     previous_return_value=$?;
-    prompt="\n${COLOR_NONE}[${COLOR_NONE}\w${GREEN}${COLOR_NONE}$(git_branch_and_user)${COLOR_NONE}] "
+    prompt="\n${COLOR_NONE}[${COLOR_NONE}\w${GREEN}${COLOR_NONE}$(git_branch_and_user )${COLOR_NONE}$(python_env)] "
 
     if test $previous_return_value -eq 0
     then
