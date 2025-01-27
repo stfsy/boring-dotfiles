@@ -12,7 +12,7 @@ LIGHT_GREEN="\[\033[1;32m\]"
  LIGHT_GRAY="\[\033[0;37m\]"
  COLOR_NONE="\[\e[0m\]"
 
-function git_branch_and_user {
+function git_info {
   git rev-parse --git-dir &> /dev/null
   git_status="$(git status 2> /dev/null)"
   branch_pattern="^On branch ([^${IFS}]*)"
@@ -55,7 +55,7 @@ function python_env() {
 
 function prompt_func() {
     previous_return_value=$?;
-    prompt="\n${COLOR_NONE}[${COLOR_NONE}\w${GREEN}${COLOR_NONE}$(git_branch_and_user )${COLOR_NONE}$(python_env)] "
+    prompt="\n${COLOR_NONE}[${COLOR_NONE}\w${GREEN}${COLOR_NONE}$(git_info)${COLOR_NONE}$(python_env)] "
 
     if test $previous_return_value -eq 0
     then
