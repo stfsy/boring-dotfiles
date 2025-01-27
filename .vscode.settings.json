@@ -2,12 +2,27 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
+    "[terraform-vars]": {
+        "editor.codeActionsOnSave": {
+            "source.formatAll.terraform": "explicit"
+        },
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": false
+    },
+    "[terraform]": {
+        "editor.codeActionsOnSave": {
+            "source.formatAll.terraform": "explicit"
+        },
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": false
+    },
     "[vue]": {
         "editor.defaultFormatter": "Vue.volar"
     },
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
+    "chat.commandCenter.enabled": true,
     "cloudcode.enableTelemetry": false,
     "cloudcode.project": "discue-io",
     "continue.enableTabAutocomplete": false,
@@ -28,9 +43,12 @@
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
+    "editor.suggest.preview": true,
     "editor.tabCompletion": "on",
+    "geminicodeassist.enable": true,
     "geminicodeassist.enableTelemetry": false,
     "geminicodeassist.inlineSuggestions.enableAuto": true,
+    "geminicodeassist.project": "discue-io",
     "git.openRepositoryInParentFolders": "never",
     "git.suggestSmartCommit": false,
     "go.useLanguageServer": true,
@@ -49,6 +67,10 @@
     "terminal.integrated.allowChords": false,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.scrollback": 10000,
+    "terraform.codelens.referenceCount": true,
+    "terraform.experimentalFeatures.prefillRequiredFields": true,
+    "terraform.languageServer.enable": true,
+    "terraform.validation.enableEnhancedValidation": false,
     "typescript.preferences.importModuleSpecifierEnding": "js",
     "window.commandCenter": true,
     "window.menuBarVisibility": "toggle",
@@ -104,26 +126,5 @@
         "!Join scalar",
         "!Join mapping",
         "!Join sequence"
-    ],
-    "chat.commandCenter.enabled": true,
-    "geminicodeassist.enable": true,
-    "terraform.experimentalFeatures.prefillRequiredFields": true,
-    "terraform.codelens.referenceCount": true,
-    "terraform.languageServer.enable": true,
-    "terraform.validation.enableEnhancedValidation": false,
-    "editor.suggest.preview": true,
-    "[terraform]": {
-        "editor.defaultFormatter": "hashicorp.terraform",
-        "editor.formatOnSave": false,
-        "editor.codeActionsOnSave": {
-            "source.formatAll.terraform": "explicit"
-        },
-    },
-    "[terraform-vars]": {
-        "editor.defaultFormatter": "hashicorp.terraform",
-        "editor.formatOnSave": false,
-        "editor.codeActionsOnSave": {
-            "source.formatAll.terraform": "explicit"
-        },
-    }
+    ]
 }
