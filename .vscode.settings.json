@@ -22,6 +22,10 @@
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
+    "autopep8.args": [
+        "--max-line-length=120",
+        "--ignore=E301,E302,E305",
+    ],
     "chat.commandCenter.enabled": true,
     "cloudcode.enableTelemetry": false,
     "cloudcode.project": "discue-io",
@@ -42,6 +46,8 @@
     "editor.formatOnSaveMode": "file",
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
+    "editor.renderControlCharacters": true,
+    "editor.renderFinalNewline": "on",
     "editor.renderWhitespace": "all",
     "editor.suggest.preview": true,
     "editor.tabCompletion": "on",
@@ -56,12 +62,18 @@
     "javascript.preferences.importModuleSpecifierEnding": "js",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "mdb.sendTelemetry": false,
+    "makefile.configureOnOpen": false,
     "mergeEditor.diffAlgorithm": "advanced",
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
     },
     "notebook.lineNumbers": "on",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.typeCheckingMode": "standard",
+    "python.languageServer": "Pylance",
     "redhat.telemetry.enabled": false,
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.allowChords": false,
