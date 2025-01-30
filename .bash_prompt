@@ -55,7 +55,7 @@ function python_env() {
 
 function prompt_func() {
     previous_return_value=$?;
-    prompt="\n${COLOR_NONE}[${COLOR_NONE}\w${GREEN}${COLOR_NONE}$(git_info)${COLOR_NONE}$(python_env)] "
+    prompt="\n${COLOR_NONE}\w${GREEN}${COLOR_NONE}$(git_info)${COLOR_NONE}$(python_env) ❯ "
 
     if test $previous_return_value -eq 0
     then
