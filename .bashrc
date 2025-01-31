@@ -116,6 +116,12 @@ alias nr="n run"
 alias ns="nr start"
 alias nt="nr test"
 alias np="nr publish"
+#ollama
+alias ollama="OLLAMA_NOHISTORY=1 ollama"
+alias o="ollama"
+alias ols="o ls"
+alias or="o run"
+alias ops="o ps"
 # ps
 alias psaux="ps auxf"
 # python
