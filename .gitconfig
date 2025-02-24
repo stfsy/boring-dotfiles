@@ -3,11 +3,53 @@
     name = 
 
 [url "https://"]
-    insteadOf = git://
+        insteadOf = git://
 
 [url "https://www.github.com/"]
-    insteadOf = git@github.com:
+        insteadOf = git@github.com:
 
 [core]
-    autocrlf = input
-    editor = nano
+        autocrlf = input
+        editor = nano
+        quotepath = off
+
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+
+[commit]
+        gpgsign = false
+        verbose = true
+
+[column]
+        ui = auto
+
+[branch]
+        sort = -committerdate
+
+[tag]
+        sort = version:refname
+
+[init]
+        defaultBranch = main
+
+[diff]
+        algorithm = histogram
+        renames = true
+
+[push]
+        autoSetupRemote = true
+
+[help]
+        autocorrect = prompt
+
+[rebase]
+        autosquash = true
+
+[merge]
+        conflictstyle = zdiff3
+
+[pull]
+        rebase = true
