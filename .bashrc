@@ -1,10 +1,7 @@
 # aws
 alias a="aws"
 alias awhoami="aws sts get-caller-identity"
-alias asp="touch ~/.aws-switch && aws-switch-profiles ~/.aws-switch && export AWS_PROFILE=$(cat ~/.aws-switch) && awhoami"
-# aws sam cli
-alias sam='if command -v sam.cmd >/dev/null 2>&1; then sam.cmd; else sam; fi'
-alias asam="sam"
+alias awhoru="aws iam list-account-aliases"
 # clear
 alias c="clear"
 # docker
@@ -134,39 +131,36 @@ alias r="reset"
 # rm
 alias rmrf="rm -rf"
 # terraform
-alias t='terraform'
-alias tf='t'
-alias ta='t apply'
-alias tay='ta -auto-approve'
-alias tc='t console'
-alias td='t destroy'
-alias tdy='td -auto-approve'
-alias tf='t fmt'
-alias tg='t graph'
-alias tim='t import'
-alias tin='t init'
-alias tinu='tin -upgrade'
-alias to='t output'
-alias tp='t plan'
-alias tpde='tp --destroy'
-alias tpr='t providers'
-alias tr='t refresh'
-alias tsh='t show'
-alias tt='t taint'
-alias tut='t untaint'
-alias tv='t validate'
-alias ts='t state'
-alias tfu='t force-unlock'
-alias tssw='ts show'
-alias tsls='ts list'
-alias tsmv='ts mv'
-alias tspl='ts pull'
-alias tsph='ts push'
-alias tsrm='ts rm'
-
+alias tf='terraform'
+alias tfa='t apply'
+alias tfay='ta -auto-approve'
+alias tfc='t console'
+alias tfd='t destroy'
+alias tfdy='td -auto-approve'
+alias tff='t fmt'
+alias tfg='t graph'
+alias tfim='t import'
+alias tfin='t init'
+alias tfinu='tin -upgrade'
+alias tfo='t output'
+alias tfp='t plan'
+alias tfpde='tp --destroy'
+alias tfpr='t providers'
+alias tfr='t refresh'
+alias tfsh='t show'
+alias tft='t tfaint'
+alias tfut='t untaint'
+alias tfv='t validate'
+alias tfs='t state'
+alias tffu='t force-unlock'
+alias tfssw='ts show'
+alias tfsls='ts list'
+alias tfsmv='ts mv'
+alias tfspl='ts pull'
+alias tfsph='ts push'
+alias tfsrm='ts rm'
 # wget
 alias wget="wget -S -O - "
-
 # misc
 alias ..="cd .."
 alias ...="cd ../.."
