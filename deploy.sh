@@ -14,4 +14,4 @@ deploy .bashrc
 deploy .gitconfig
 deploy .hyper.js
 
-install .bashrc
+install .bash_profile
