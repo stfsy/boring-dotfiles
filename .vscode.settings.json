@@ -2,6 +2,9 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
     "[terraform-vars]": {
         "editor.codeActionsOnSave": {
             "source.formatAll.terraform": "explicit"
@@ -26,6 +29,7 @@
         "--max-line-length=120",
         "--ignore=E301,E302,E305",
     ],
+    "aws.telemetry": false,
     "chat.commandCenter.enabled": true,
     "cloudcode.enableTelemetry": false,
     "cloudcode.project": "discue-io",
@@ -51,6 +55,9 @@
     "editor.renderWhitespace": "all",
     "editor.suggest.preview": true,
     "editor.tabCompletion": "on",
+    "files.associations": {
+        "*.j2": "ssm-yaml"
+    },
     "geminicodeassist.enable": true,
     "geminicodeassist.enableTelemetry": false,
     "geminicodeassist.inlineSuggestions.enableAuto": true,
@@ -61,8 +68,8 @@
     "html.format.wrapAttributes": "force-aligned",
     "javascript.preferences.importModuleSpecifierEnding": "js",
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "mdb.sendTelemetry": false,
     "makefile.configureOnOpen": false,
+    "mdb.sendTelemetry": false,
     "mergeEditor.diffAlgorithm": "advanced",
     "notebook.cellToolbarLocation": {
         "default": "right",
@@ -138,5 +145,8 @@
         "!Join scalar",
         "!Join mapping",
         "!Join sequence"
-    ]
+    ],
+    "yaml.schemas": {
+        ".vscode/deploy_stacks.schema.json": "deploy_stacks.yaml"
+    }
 }
