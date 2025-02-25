@@ -35,3 +35,23 @@ function extract {
     done
 fi
 }
+
+aisp() {
+  unset _PROFILE;
+  # creates tmp file
+  tf=$(mktemp /tmp/aisp.XXXXXXXXX)
+  # runs aws-switch-profiles and stores user selection to tmp file
+  aws-switch-profiles $tf
+  # reads in tmp file and stores to variable
+  _PROFILE=$(<$tf);
+  if [ -z $_PROFILE ];
+    then
+      echo "AWS_PROFILE not selected.";
+    else
+      export AWS_PROFILE=$_PROFILE
+      awhoami
+      awhoru
+  fi
+
+  rm $tf;
+} 
