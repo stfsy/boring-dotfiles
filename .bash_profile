@@ -2,3 +2,6 @@
 test -f ~/.bashrc && . ~/.bashrc
 test -f ~/.bash_prompt && . ~/.bash_prompt
 test -f ~/.bash_functions && . ~/.bash_functions
+
+# https://stackoverflow.com/questions/58857724/how-can-i-make-symlinks-made-from-inside-docker-linux-containers-to-be-seen-from/63325536#63325536
+export MSYS=winsymlinks:nativestrict
