@@ -140,6 +140,8 @@ alias p="python"
 alias pe='if [ -d ".env" ]; then source ./.env/Scripts/activate; else p -m venv .env && source ".env/Scripts/activate"; fi && which python && which pip'
 alias ped='deactivate'
 alias ph="p -m http.server"
+# quick pw generation for testing
+alias pw="tr -dc 'A-Za-z0-9!?%=' < /dev/urandom | head -c 24"
 # reset
 alias r="reset"
 # rm
