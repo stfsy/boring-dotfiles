@@ -5,7 +5,7 @@ alias awhoru="aws iam list-account-aliases"
 # clear
 alias c="clear"
 # docker
-alias docker='docker'
+alias docker='MSYS_NO_PATHCONV=1 docker'
 alias d='docker'
 alias dc='d container'
 alias dcl='dc ls'
