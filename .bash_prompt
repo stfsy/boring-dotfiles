@@ -13,56 +13,49 @@ LIGHT_GREEN="\[\033[1;32m\]"
  COLOR_NONE="\[\e[0m\]"
 
 function git_info {
-  git rev-parse --git-dir &> /dev/null
-  git_status="$(git status 2> /dev/null)"
-  branch_pattern="^On branch ([^${IFS}]*)"
-  remote_pattern="Your branch is (.*)"
-  diverge_pattern="Your branch and (.*) have diverged"
+  # Fast check for git repo
+  local git_dir=$(git rev-parse --git-dir 2> /dev/null)
+  [[ -z "$git_dir" ]] && return
 
-  if [[ ! ${git_status}} =~ "working directory clean" ]]; then
-    state="?"
-  fi
-  # add an else if or two here if you want to get more specific
-  if [[ ${git_status} =~ ${remote_pattern} ]]; then
-    if [[ ${BASH_REMATCH[1]} == "ahead" ]]; then
-      remote=" ${GREEN}↑"
-    fi
-    if [[ ${BASH_REMATCH[1]} == "behind" ]]; then
-      remote=" ${GREEN}↓"
-    fi
-  fi 
-  if [[ ${git_status} =~ ${diverge_pattern} ]]; then
+  # Get branch name and status in one porcelain call (faster)
+  local status_output=$(git status --porcelain --branch 2> /dev/null)
+  local branch=$(echo "$status_output" | grep "##" | sed 's/## //;s/\.\.\..*//')
+  
+  local state=""
+  local remote=""
+
+  # Remote status logic
+  if echo "$status_output" | grep -q 'ahead'; then
+    remote=" ${GREEN}↑"
+  elif echo "$status_output" | grep -q 'behind'; then
+    remote=" ${GREEN}↓"
+  elif echo "$status_output" | grep -q 'diverged'; then
     remote=" ${YELLOW}↑↓"
   fi
-  if [[ ${git_status} =~ ${branch_pattern} ]]; then
-    branch=" ⎇ ${BASH_REMATCH[1]}"
-    # echo "${branch}${ORANGE}${remote}${state}"
-    echo -e ${RED}"${branch}${remote}"
-  fi
+
+  # Return formatted string as per your original visual style
+  echo -e "${RED} ᚴ ${branch}${remote}${state}${COLOR_NONE}"
 }
 
 function python_env() {
-  if [[ "$VIRTUAL_ENV" ]] ; then
-    current_dir=$(pwd)
-    env_path="$VIRTUAL_ENV"
-    python_path=$(which python)
-
-    if [[ $env_path/Scripts/python == "$python_path" ]]; then
-      echo -e " 🐍"
-    fi
+  if [[ -n "$VIRTUAL_ENV" ]] ; then
+    # Kept your specific snake emoji and spacing
+    echo -e " 🐍"
   fi
 }
 
 function prompt_func() {
-    previous_return_value=$?;
-    prompt="\n${COLOR_NONE}\w${GREEN}${COLOR_NONE}$(git_info)${COLOR_NONE}$(python_env) ❯ "
-
-    if test $previous_return_value -eq 0
-    then
-        PS1="${prompt}"
-    else
-        PS1="${prompt}${COLOR_NONE}"
+    local exit_code=$?
+    
+    # Meaningful exit code indicator
+    local symbol_color="${WHITE}"
+    if [[ $exit_code -ne 0 ]]; then
+        symbol_color="${RED}"
     fi
+
+    # \w = working directory
+    # Rebuilding your original structure: [path][git][python] ❯ 
+    PS1="\n${COLOR_NONE}\w$(git_info)$(python_env) ${symbol_color}❯${COLOR_NONE} "
 }
 
 PROMPT_COMMAND=prompt_func 
