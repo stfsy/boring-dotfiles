@@ -2,9 +2,6 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.autopep8"
-    },
     "[terraform-vars]": {
         "editor.codeActionsOnSave": {
             "source.formatAll.terraform": "explicit"
@@ -25,18 +22,13 @@
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
-    "autopep8.args": [
-        "--max-line-length=120",
-        "--ignore=E301,E302,E305",
-    ],
-    "aws.telemetry": false,
     "chat.commandCenter.enabled": true,
     "cloudcode.enableTelemetry": false,
     "cloudcode.project": "discue-io",
     "continue.enableTabAutocomplete": false,
     "continue.telemetryEnabled": false,
     "diffEditor.codeLens": true,
-    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": true,
     "editor.accessibilitySupport": "off",
     "editor.autoClosingBrackets": "always",
     "editor.codeActionsOnSave": {
@@ -55,9 +47,6 @@
     "editor.renderWhitespace": "all",
     "editor.suggest.preview": true,
     "editor.tabCompletion": "on",
-    "files.associations": {
-        "*.j2": "ssm-yaml"
-    },
     "geminicodeassist.enable": true,
     "geminicodeassist.enableTelemetry": false,
     "geminicodeassist.inlineSuggestions.enableAuto": true,
@@ -68,7 +57,6 @@
     "html.format.wrapAttributes": "force-aligned",
     "javascript.preferences.importModuleSpecifierEnding": "js",
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "makefile.configureOnOpen": false,
     "mdb.sendTelemetry": false,
     "mergeEditor.diffAlgorithm": "advanced",
     "notebook.cellToolbarLocation": {
@@ -76,11 +64,6 @@
         "jupyter-notebook": "left"
     },
     "notebook.lineNumbers": "on",
-    "python.analysis.inlayHints.functionReturnTypes": true,
-    "python.analysis.inlayHints.pytestParameters": true,
-    "python.analysis.inlayHints.variableTypes": true,
-    "python.analysis.typeCheckingMode": "standard",
-    "python.languageServer": "Pylance",
     "redhat.telemetry.enabled": false,
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.allowChords": false,
@@ -146,7 +129,134 @@
         "!Join mapping",
         "!Join sequence"
     ],
-    "yaml.schemas": {
-        ".vscode/deploy_stacks.schema.json": "deploy_stacks.yaml"
-    }
+    "chat.agent.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "vue": true,
+        "javascript": true,
+        "go": true,
+        "instructions": true
+    },
+    "vue.autoInsert.dotValue": true,
+    "docker.extension.enableComposeLanguageServer": false,
+    "mdb.mcp.server": "prompt",
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "chat.tools.terminal.autoApprove": {
+        "cd": true,
+        "echo": true,
+        "ls": true,
+        "pwd": true,
+        "cat": true,
+        "head": true,
+        "tail": true,
+        "findstr": true,
+        "wc": true,
+        "tr": true,
+        "cut": true,
+        "cmp": true,
+        "which": true,
+        "basename": true,
+        "dirname": true,
+        "realpath": true,
+        "readlink": true,
+        "stat": true,
+        "file": true,
+        "du": true,
+        "df": true,
+        "sleep": true,
+        "git status": true,
+        "git log": true,
+        "git show": true,
+        "git diff": true,
+        "column": true,
+        "/^column\\b.*-c\\s+[0-9]{4,}/": false,
+        "date": true,
+        "/^date\\b.*(-s|--set)\\b/": false,
+        "find": true,
+        "/^find\\b.*-(delete|exec|execdir|fprint|fprintf|fls|ok|okdir)\\b/": false,
+        "grep": true,
+        "/^grep\\b.*-(f|P)\\b/": false,
+        "sort": true,
+        "/^sort\\b.*-(o|S)\\b/": false,
+        "tree": true,
+        "/^tree\\b.*-o\\b/": false,
+        "rm": false,
+        "rmdir": false,
+        "del": false,
+        "ri": false,
+        "rd": false,
+        "erase": false,
+        "dd": false,
+        "kill": false,
+        "ps": false,
+        "top": false,
+        "Stop-Process": false,
+        "spps": false,
+        "taskkill": false,
+        "taskkill.exe": false,
+        "curl": false,
+        "wget": false,
+        "Invoke-RestMethod": false,
+        "Invoke-WebRequest": false,
+        "irm": false,
+        "iwr": false,
+        "chmod": false,
+        "chown": false,
+        "Set-ItemProperty": false,
+        "sp": false,
+        "Set-Acl": false,
+        "jq": false,
+        "xargs": false,
+        "eval": false,
+        "Invoke-Expression": false,
+        "iex": false,
+        "npm run test:unit --silent": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "npm run test:unit -- --coverage --silent": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "./test.sh": true,
+        "gofmt": {
+            "approve": true,
+            "matchCommandLine": false
+        },
+        "/^go build \\./\\.\\.\\.$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^go mod download$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^go list -m all$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^go list -m all -mod=mod$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.colorTheme": "Dark Modern",
 }
