@@ -29,6 +29,8 @@ alias dmes='dm env --swarm'
 alias dmi='dm ip'
 alias dml='dm ls'
 alias dms='dm ssh'
+# disk usage / du
+alias dus='du --summarize --human-readable * | sort -hr'
 # eval
 alias e="eval"
 alias 3='e'
