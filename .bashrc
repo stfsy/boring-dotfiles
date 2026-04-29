@@ -34,6 +34,8 @@ alias dus='du --summarize --human-readable * | sort -hr'
 # eval
 alias e="eval"
 alias 3='e'
+# github
+alias gh="GH_TELEMETRY=false gh"
 # git
 alias g="git"
 alias ga="g add"
