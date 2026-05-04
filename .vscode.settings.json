@@ -53,6 +53,7 @@
     "geminicodeassist.project": "discue-io",
     "git.openRepositoryInParentFolders": "never",
     "git.suggestSmartCommit": false,
+    "git.addAICoAuthor": "off",
     "go.useLanguageServer": true,
     "html.format.wrapAttributes": "force-aligned",
     "javascript.preferences.importModuleSpecifierEnding": "js",
