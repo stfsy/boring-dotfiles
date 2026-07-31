@@ -7,3 +7,6 @@ test -f ~/.bash_functions && . ~/.bash_functions
 
 # https://stackoverflow.com/questions/58857724/how-can-i-make-symlinks-made-from-inside-docker-linux-containers-to-be-seen-from/63325536#63325536
 export MSYS=winsymlinks:nativestrict
+
+# https://github.blog/changelog/2026-04-22-github-cli-opt-out-usage-telemetry/#how-to-opt-out
+export DO_NOT_TRACK=true
