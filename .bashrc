@@ -4,6 +4,8 @@ alias awhoami="aws sts get-caller-identity"
 alias awhoru="aws iam list-account-aliases"
 # clear
 alias c="clear"
+# claude
+alias cc="CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 claude"
 # docker
 alias docker='MSYS_NO_PATHCONV=1 docker'
 alias d='docker'
