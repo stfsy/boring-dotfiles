@@ -152,6 +152,10 @@ alias pw="tr -dc 'A-Za-z0-9!?%=' < /dev/urandom | head -c 24"
 alias r="reset"
 # rm
 alias rmrf="rm -rf"
+# tofu
+alias otf='tofu'
+alias otfa='otf apply'
+alias otfv='otf validate'
 # terraform
 alias tf='terraform'
 alias tfa='tf apply'
